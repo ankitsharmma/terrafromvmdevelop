@@ -105,7 +105,7 @@ resource "azurerm_linux_virtual_machine" "vm" {
   resource_group_name = data.azurerm_resource_group.rg.name
   location            = data.azurerm_resource_group.rg.location
 
-   size = "Standard_B2s"
+   size = "Standard_D2s_v3"
 
   admin_username = var.admin_username
   admin_password = var.admin_password
